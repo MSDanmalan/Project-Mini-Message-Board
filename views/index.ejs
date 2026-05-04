@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Homepage</title>
+  </head>
+  <body>
+    <h1>Hello from index views</h1>
+    <ul>
+      <% for (let i = 0; i < messages.length; i++) { %>
+        <li>
+            <p><%=messages[i].text%></p>
+            <p><%=messages[i].user%></p>
+            <p><%=messages[i].added%></p>
+        </li>
+      <% } %>
+    </ul>
+  </body>
+</html>
