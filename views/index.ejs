@@ -4,6 +4,7 @@
   </head>
   <body>
     <h1>Hello from index views</h1>
+    <div><%- include('navbar', {links: links}) %></div>
     <ul>
       <% for (let i = 0; i < messages.length; i++) { %>
         <li>
