@@ -7,7 +7,6 @@ newRouter.get("/", (req, res) => res.render("form"));
 newRouter.post('/', (req, res) => {
     messages.push({ text: req.body.messageText, user: req.body.messageUser, added: new Date() });
 res.redirect("/");
-console.log(req.body.messageText)
 })
 
 module.exports = newRouter;

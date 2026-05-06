@@ -12,6 +12,9 @@
             <p><%=messages[i].user%></p>
             <p><%=messages[i].added%></p>
         </li>
+        <a href="message/:<%=messages[i].user%>">
+         <span>Open message</span>
+        </a>
       <% } %>
     </ul>
   </body>

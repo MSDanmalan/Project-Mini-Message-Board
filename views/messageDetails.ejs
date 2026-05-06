@@ -1,0 +1,11 @@
+<ul>
+    <% for (let i = 0; i < messages.length; i++) { %>
+        <% if (messages[i].user === messageId.replace(":", "")) { %>
+            <li>
+                <p><%=messages[i].text%></p>
+                <p><%=messages[i].user%></p>
+                <p><%=messages[i].added%></p>
+            </li>
+        <% } %>
+    <% } %>
+  </ul>
